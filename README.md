@@ -1,5 +1,6 @@
 # Fun_Games
 Just some games I felt like coding.
 
-Games:&nbsp;
+Games:
+
 Rock, paper, or scissors.
