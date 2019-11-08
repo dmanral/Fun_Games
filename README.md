@@ -6,3 +6,5 @@ Games:
 Rock, paper, or scissors.
 
 Tic, Tac, Toe.
+
+Pong.
