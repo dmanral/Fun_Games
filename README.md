@@ -1,10 +1,10 @@
 # Fun_Games
-Just some games I felt like coding.
+### Just some games I felt like coding.
 
-Games:
+__*Games:*__
 
-Rock, paper, or scissors.
+  * Rock, paper, or scissors
 
-Tic, Tac, Toe.
+  * Tic, Tac, Toe (*unfinished*)
 
-Pong.
+  * Pong
