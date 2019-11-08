@@ -4,7 +4,7 @@
 import turtle
 import winsound
 import ctypes
-import os
+# import os
 from Pong_Build_Game import *
 from Pong_Game_Play import *
 
@@ -24,13 +24,13 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1
-        os.system("afplay bounce.wav&")                      # MacOS
+        # os.system("afplay bounce.wav&")                      # MacOS
         winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
     
     if ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1
-        os.system("afplay bounce.wav&")                      # MacOS
+        # os.system("afplay bounce.wav&")                      # MacOS
         winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
 
     if ball.xcor() > 390:
@@ -51,13 +51,13 @@ while True:
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor () < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
         ball.setx(340)
         ball.dx *= -1
-        os.system("afplay bounce.wav&")                      # MacOS
+        # os.system("afplay bounce.wav&")                      # MacOS
         winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
     
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor () < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
         ball.setx(-340)
         ball.dx *= -1
-        os.system("afplay bounce.wav&")                      # MacOS
+        # os.system("afplay bounce.wav&")                      # MacOS
         winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
 
     # Winner
