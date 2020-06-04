@@ -1,7 +1,7 @@
 # Basic Tetris
 --------------
 
-Followed the [tutorial](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw/about) of Ania Kubow.
+Followed the tutorial of [Ania Kubow](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw/about).
 
 Here is the exact [link](https://www.youtube.com/watch?v=rAUn1Lom6dw) to the tutorial.
 
