@@ -5,8 +5,6 @@ __*Games:*__
 
   * Rock, paper, or scissors
 
-  * Tic, Tac, Toe (*unfinished*)
-
   * Pong
   
   * Basic Tetris (*basically finished*)
