@@ -1,0 +1,115 @@
+html {
+  background-color: rgba(3, 0, 0, 1);
+}
+
+.content {
+  margin: auto;
+  max-width: 500px;
+}
+
+h1 {
+  color: #F31806;
+  font-family: monospace;
+	font-size: 70px ;
+	font-weight: 700;
+  text-align: center;
+	text-shadow: 4px 4px #B11002;
+}
+
+h3 {
+  color: rgba(255, 255, 255, 1);
+  font-family: monospace;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgba(3, 0, 0, 0);
+  text-align: center;
+  font-family: cursive;
+}
+
+.container {
+  display: flex;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0.4vw  0.6vw #1BEEE5,
+              0 0   4vw  0.4vw #01FEF4;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  /* This will automatically get replaced by random color picked from an array. */
+  background-color: rgba(252, 252, 252, 1);
+}
+
+
+.mini-grid {
+  margin-left: 50px;
+  width: 90px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0.4vw  0.6vw #1BEEE5,
+              0 0   4vw  0.4vw #01FEF4;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+/* Buttons */
+.btn {
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  width: 90px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  font-family: monospace;
+  color: white;
+}
+.start-btn {
+  background-color: rgba(2, 200, 26, 0.5);
+  box-shadow: 0 0 0.2vw  0.3vw #3AF451,
+              0 0   8vw  0.4vw #0FF82C;
+  margin-right: 5px;
+
+}
+.pause-btn {
+  background-color: rgba(247, 254, 2, 0.5);
+  box-shadow: 0 0 0.2vw  0.3vw #F1EF2B,
+              0 0   8vw  0.4vw #FCF904;
+  margin-right: 5px;
+
+}
+.restart-btn {
+  background-color: rgba(229, 10, 3, 0.5);
+  box-shadow: 0 0 0.2vw  0.3vw #e97272,
+              0 0   8vw  0.4vw #e50b0b;
+  margin-left: 5px;
+}
+
+.start-btn:hover {
+  background-color: rgba(3, 252, 7, 0.7);
+}
+.pause-btn:hover {
+  background-color: rgba(247, 254, 2, 0.7);
+}
+.restart-btn:hover {
+  background-color: rgba(251, 4, 1, 0.7);
+}
