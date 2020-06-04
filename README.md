@@ -8,3 +8,5 @@ __*Games:*__
   * Tic, Tac, Toe (*unfinished*)
 
   * Pong
+  
+  * Basic Tetris (*basically finished*)
