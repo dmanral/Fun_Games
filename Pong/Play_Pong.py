@@ -2,9 +2,9 @@
 # Credit: Christian Thompson (Youtube)
 
 import turtle
-import winsound
+# import winsound
 import ctypes
-# import os
+import os
 from Pong_Build_Game import *
 from Pong_Game_Play import *
 
@@ -24,14 +24,14 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1
-        # os.system("afplay bounce.wav&")                      # MacOS
-        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
-    
+        os.system("afplay bounce.wav&")                      # MacOS
+        # winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
+
     if ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1
-        # os.system("afplay bounce.wav&")                      # MacOS
-        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
+        os.system("afplay bounce.wav&")                      # MacOS
+        # winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
 
     if ball.xcor() > 390:
         ball.goto(0, 0)
@@ -39,7 +39,7 @@ while True:
         score_1 += 1
         pen.clear()
         pen.write("Player-1: {}  Player-2: {}".format(score_1, score_2), align="center", font=("Courier", 24, "normal"))
-    
+
     if ball.xcor() < -390:
         ball.goto(0, 0)
         ball.dx *= -1
@@ -51,14 +51,14 @@ while True:
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor () < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
         ball.setx(340)
         ball.dx *= -1
-        # os.system("afplay bounce.wav&")                      # MacOS
-        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
-    
+        os.system("afplay bounce.wav&")                      # MacOS
+        # winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
+
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor () < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
         ball.setx(-340)
         ball.dx *= -1
-        # os.system("afplay bounce.wav&")                      # MacOS
-        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
+        os.system("afplay bounce.wav&")                      # MacOS
+        # winsound.PlaySound("bounce.wav", winsound.SND_ASYNC) # Windows
 
     # Winner
     if score_1 == 7 and score_2 < 7:
